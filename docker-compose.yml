@@ -22,6 +22,7 @@ services:
         - external
       volumes:
         - drupal-data:/var/www/html
+        - /var/www/html/themes
   webserver:
     image: nginx:1.17.4-alpine
     container_name: webserver
