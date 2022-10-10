@@ -34,4 +34,43 @@ Then, to able to open the service running on this port on the `host` machine, I 
       - 3300:81
 ```
 
+## Database
+
+The database for this drupal application is using a default `mysql` instance. The `mysql` is also defined as a service in the `docker-compose` file, with the name of `mysql`, and using the `8.0` version of the official `mysql` `docker` image. 
+
+The database related secrets are stored in an `env` file, which is given as an argument when defining the service. 
+
+If you want to fire up this application on your own machine using docker, you need to do the following: 
+
+1) create a .env file in your local clone of _this_ repository: 
+
+
+```bash
+touch .env
+```
+
+2) Open this file using any text editor of your choice, for example: 
+
+```bash
+vim .env
+```
+
+3) Add the following key with the value of choice:
+
+```bash
+MYSQL_ROOT_PASSWORD=
+MYSQL_DATABASE=drupal
+MYSQL_USER=
+MYSQL_PASSWORD=
+```
+
+## Drupal
+
+This application is using the `8.7.8` version of drupal built on the `fpm-alpine`. (`drupal:8.7.8-fpm-alpine`).
+
+
+## Certbot
+
+Issuing `SSL` certificate on the target domain when deployng a container drive web application. The deployment process is discussed later in this documentation.
+
 
