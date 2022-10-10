@@ -23,6 +23,7 @@ services:
       volumes:
         - drupal-data:/var/www/html
         - /var/www/html/themes
+        - ./zilahir_drupal_theme:/var/www/html/themes/zilahir
   webserver:
     image: nginx:1.17.4-alpine
     container_name: webserver
