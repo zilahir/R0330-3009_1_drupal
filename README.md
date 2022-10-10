@@ -74,3 +74,21 @@ This application is using the `8.7.8` version of drupal built on the `fpm-alpine
 Issuing `SSL` certificate on the target domain when deployng a container drive web application. The deployment process is discussed later in this documentation.
 
 
+# Requirements
+
+* The drupal project comes with the following requirements: 
+* Responsiveness 5 Points: •web site is  responsive •images are responsive
+* Make use of different features (10 points):
+    * Youtube Videos
+    * contact form 
+    * galleries & slideshows
+    * map
+* Visuality (20P):
+    * Content
+    * Theme selection
+    * Typography
+    * Logo 
+    * Favicon 
+* Functionality of navigation(10P)
+* Over all appearance(5P) 
+
