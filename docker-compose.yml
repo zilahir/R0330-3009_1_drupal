@@ -29,7 +29,7 @@ services:
       - drupal
     restart: unless-stopped
     ports:
-      - 80:80
+      - 3300:81
     volumes:
       - drupal-data:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
@@ -44,7 +44,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - drupal-data:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email zilahi@r0330_3009_drupal --agree-tos --no-eff-email --staging -d r0330_3009_drupal -d www.r0330_3009_drupal
+    command: certonly --webroot --webroot-path=/var/www/html --email zilahi@gmail.com --agree-tos --no-eff-email --staging -d r03303009drupal.local -d www.r03303009drupal.local
 
 networks:
   external:
